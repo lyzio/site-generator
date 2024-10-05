@@ -1,0 +1,11 @@
+{% include 'header.html' %}
+<div id="content">
+    <div class="metadata">
+        <h1>{{ metadata.title }}</h1>
+        <p>{{ metadata.updated }}</p>
+    </div>
+    <div class="single-post-content">
+        {{ content | safe }}
+    </div>
+</div>
+{% include 'footer.html' %}

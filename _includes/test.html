@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ post.title }}</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <nav>
+                <ul>
+                    <li><a href="page1.html">Page 1</a></li>
+                    <li><a href="page2.html">Page 2</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div id="content">
+            <div class="metadata">
+                <h1>{{ post.title }}</h1>
+                <p>{{ post.date }}</p>
+            </div>
+            <div class="post-content">
+                {{ post.content | safe }}
+            </div>
+        </div>
+
+        <div id="footer">
+
+        </div>
+    </div>
+</body>
+</html>
